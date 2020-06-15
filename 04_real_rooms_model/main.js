@@ -88,9 +88,9 @@ function onMeshTouchStart(e){
 
 function showTooltip(e) {
 	console.log(`Evento recibido: ${e}`)	
-    var divElement = $('tooltip');	
+    var divElement = $("#tooltip");	
     console.log(`Evento recibido: ${e.detail.name}`)
-    divElement.find('ObjectViewMouse').text(`${e.detail.name}`);
+    divElement.find("span").text(`${e.detail.name}`);
 
 }
 
